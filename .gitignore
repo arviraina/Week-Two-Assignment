@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.gradio/
+*.db
+*.db-*
+.ipynb_checkpoints/
+.DS_Store

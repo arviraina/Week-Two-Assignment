@@ -1,0 +1,10 @@
+version,mode,change,label_source,correct,total,accuracy_percent,kappa
+Demo baseline,demo,Original supplied settings,my_labels.csv,16,30,53.3,0.3617
+Live initial,live,80 token allowance; original prompt,my_labels.csv,3,30,10,0.5 displayed; invalid with 26 blocked
+Live implementation fixes,live,1024 tokens; pacing and retries; original prompt,my_labels.csv,18,30,60,0.4828 across all 30; app displays 0.5302
+Prompt V2 category definitions,live,Explicit definitions of four categories; other settings unchanged,my_labels.csv,22,30,73.3,0.6439
+Prompt V3 overlap rule,live,Added main subject rule for overlapping categories; other settings unchanged,my_labels.csv,23,30,76.7,0.6912
+Prompt V4 business boundary,live,Business rule for earnings share prices and commercial deals,my_labels.csv,23,30,76.7,0.6893
+Prompt V5 uncertainty,live,User drafted uncertainty instruction; floor remains zero,my_labels.csv,22,30,73.3,0.6418
+Prompt V5 repeat,live,Unchanged prompt consistency check,my_labels.csv,22,30,73.3,0.6418
+Prompt V6 explicit uncertainty,live,Explicit 0.4 or lower for equally plausible categories,my_labels.csv,22,30,73.3,0.6418
